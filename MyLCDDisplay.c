@@ -1,6 +1,13 @@
 #include "myLcd.h"
 #include "stm32f10x.h"                  
 
+
+/*
+	Bibloteca para LCD para STM32F103C8T6
+	Autor: Guilherme Artuzo
+*/
+
+
 void LcdInitGpio8Bits(void)	
 {
 	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN | RCC_APB2ENR_IOPBEN |RCC_APB2ENR_IOPCEN;
